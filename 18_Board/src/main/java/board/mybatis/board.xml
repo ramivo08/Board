@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  
+  <mapper namespace="board.model.Board">
+  
+  <insert id="InsertBoard">
+  	insert into board(num,writer,email,subject,passwd,reg_date,ref,re_step,re_level,content,ip)
+  	values(board_seq.nextval,,?,?,?,?,?,board_seq.currval ,?,?,?,?)
+  </insert>
+  
+  </mapper>
+  
+<!-- board.xm -->
